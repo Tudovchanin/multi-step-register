@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #121826;
+	background-image: url("./blur-radial.svg"), url("./blur-radial.svg");
+	background-position: -30% -130%, 130% 230%;
+	background-repeat: no-repeat;
+	border: solid;
+	min-height: 100vh;
+	font-family: sans-serif;
+}
+.card-form {
+	width: 458px;
+	border: solid 1px #4d5562;
+	border-radius: 12px;
+	background-color: #212936;
+}
+.step {
+	display: grid;
+	height: 100%;
+	width: 458px;
+	height: 380px;
+	padding: 38px 40px 0;
+}
+.step-finish {
+	height: 360px;
+	padding-bottom: 20px;
+}
+.title-card {
+	font-weight: 200;
+	font-size: 1.25rem;
+	color: #e5e7eb;
+}
+label {
+	position: relative;
+	font-size: 14px;
+	color: #a1a1a9;
+}
+input {
+	width: 100%;
+	height: 46px;
+	padding-left: 14px;
+	border: solid 2px #4d5562;
+	outline: none;
+	background-color: inherit;
+	border-radius: 12px;
+	margin-top: 8px;
+	color: #e5e7eb;
+}
+::placeholder {
+	color: #4d5562;
+}
+input:focus {
+	background-color: inherit;
+}
+input:active {
+	background-color: inherit;
+}
+button {
+	justify-self: center;
+	background-color: #845eee;
+	outline: none;
+	border: none;
+	color: #e5e7eb;
+	width: 126px;
+	height: 40px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #9b77fd;
+}
+.topics {
+	width: 100%;
+	height: 46px;
+	border-radius: 12px;
+	background-color: #394150;
+	cursor: pointer;
+}
+.hover:hover {
+	background-color: #505661;
+}
+.title-card + .info-user {
+	align-self: center;
+}
+span {
+	display: inline-block;
+	color: #a1a1a9;
+}
+.conteiner-topics {
+	padding-bottom: 20px;
+}
+.title-topics {
+	padding-bottom: 10px;
+}
+.user-topics {
+	color: #e5e7eb;
+	padding-left: 8px;
+	line-height: 1.5;
+}
+.icon-step {
+	position: relative;
+	padding: 12px 0;
+	margin: 0 auto;
+	width: 250px;
+	font-size: 12px;
+	color: #4d5562;
+}
+
+.container-icon {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.icon {
+	width: 10px;
+	height: 10px;
+	margin: 0 6px;
+	border-radius: 100%;
+	background-color: #4d5562;
+}
+.icon-active {
+	background-color: #845eee;
+	outline: solid 5px #845eee42;
+}
+.hidden {
+	display: none;
+}
+
+.btn-active {
+	background-color: #845eee;
+}
+.error {
+	display: none;
+	position: absolute;
+	right: 0;
+	color: brown;
+}
+.error-active {
+	display: inline-block;
+}

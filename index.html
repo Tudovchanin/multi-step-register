@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<form class="card-form" novalidate>
+			<div class="step">
+
+				<h1 class="title-card">Register</h1>
+				<label>
+					Name
+					<span class="error error-name">enter your name</span>
+					<input type="text" name="name" id="username" placeholder="enter your name" autocomplete="off">
+				</label>
+
+				<label>
+					Email
+					<span class="error error-email">enter your email</span>
+					<input type="email" name="useremail" placeholder="example@gmail.com" id="email" autocomplete="off">
+				</label>
+				<button onclick="firstChecking(event) ">continue</button>
+
+			</div>
+
+
+
+
+			<div class="step hidden">
+				<h1 class="title-card">Which topics you arer interested in?</h1>
+
+				<button class="topics  hover" onclick="ChangeBackgroundColor(this,event)">Software Development</button>
+
+				<button class="topics hover" onclick="ChangeBackgroundColor(this,event)">User Experience</button>
+
+				<button class="topics hover" onclick="ChangeBackgroundColor(this,event)">Graphic Design</button>
+
+				<button onclick="secondCheck(event)">continue</button>
+
+			</div>
+
+			<div class="step step-finish hidden">
+				<h1 class="title-card">Summary</h1>
+				<div class="info-user">
+					<span>Name:</span>
+					<span class="username"></span>
+				</div>
+				<div class="info-user">
+					<span>Email:</span>
+					<span class="email"></span>
+				</div>
+
+
+
+				<div class="conteiner-topics">
+					<span class="title-topics">Topics:</span><br>
+					<div class="user-topics"></div>
+					<div class="user-topics"></div>
+					<div class="user-topics"></div>
+				</div>
+
+				<button type="submit" id="btn-submit">Confirm</button>
+			</div>
+		</form>
+
+
+
+		<div class="icon-step">
+			Step <span class="number-step">1</span> of 3
+			<span class="container-icon">
+				<span class="icon icon-active"></span>
+				<span class="icon"></span>
+				<span class="icon"></span>
+			</span>
+		</div>
+	</div>
+	<script src="js.js"></script>
+</body>
+
+</html>
